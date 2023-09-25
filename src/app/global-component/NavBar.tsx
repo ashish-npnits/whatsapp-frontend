@@ -6,8 +6,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import UserName from './UserName';
 import {useDispatch} from 'react-redux';
-import { AppDispatch, useAppSelector } from '@/state/store';
-import { logout } from '@/state/features/auth-slice';
+import { AppDispatch, useAppSelector } from '../../state/store';
+import { logout } from '../../state/features/auth-slice';
 
 
 const NavBar = () => {
@@ -27,16 +27,16 @@ const NavBar = () => {
   <header>
   <nav
      className="
-       flex flex-wrap
-       items-center
-       justify-between
-       w-full
-       py-4
-       md:py-0
-       px-4
-       text-lg text-gray-700
-       bg-white
-     "
+     flex flex-wrap
+     items-center
+     justify-between
+     w-full
+     py-4
+     md:py-0
+     px-4
+     text-lg text-gray-700
+     bg-white
+     fixed top-0 left-0 right-0" 
    >
     <div>
        <Link href="#">

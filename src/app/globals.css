@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+nav{
+  background-color: rgb(249 250 251);
+}
