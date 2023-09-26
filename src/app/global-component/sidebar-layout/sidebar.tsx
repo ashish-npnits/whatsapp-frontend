@@ -37,7 +37,7 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
 
         {/* Provide the context value */}
         <SidebarContext.Provider value={{ expanded }}>
-          <ul className="flex-1 px-3">{children}</ul>
+          <ul className="flex-1 px-4">{children}</ul>
         </SidebarContext.Provider>
 
         <div className="border-t flex p-3">

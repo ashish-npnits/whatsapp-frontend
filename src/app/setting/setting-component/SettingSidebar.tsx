@@ -6,6 +6,7 @@ import QuickreplyOutlinedIcon from '@mui/icons-material/QuickreplyOutlined';
 import PersonalVideoOutlinedIcon from '@mui/icons-material/PersonalVideoOutlined';
 import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
 import MarkChatUnreadOutlinedIcon from '@mui/icons-material/MarkChatUnreadOutlined';
+import Link from 'next/link';
 
 const SettingSidebar = () => {
     return (
@@ -15,53 +16,47 @@ const SettingSidebar = () => {
           <li>
                 <div className="text-xl my-10 ml-3 font-normal" >Settings</div>
              </li>
+             
              <hr/>
              <li>
-                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
-                   <DashboardCustomizeOutlinedIcon sx={{ fontSize: 16 }}  />
-                   <span className="ml-3 text-sm font-light">Dashboard</span>
-                </a>
-             </li>
-             <hr/>
-             <li>
-                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                <Link href="/setting/profile" className="flex items-center p-2 rounded-lg dark:text-white hover:bg-green-50  dark:hover:bg-green-700 group  bg-gradient-to-tr from-green-200 to-green-100 text-green-800">
                     <Person2OutlinedIcon sx={{ fontSize: 16 }} />
                    <span className="ml-3 text-sm font-light">Profile</span>
                    
-                </a>
+                </Link>
              </li>
              <hr/>
              <li>
-                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                <Link href="/setting/quick-replies" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-50  dark:hover:bg-green-700 group">
                 <QuickreplyOutlinedIcon sx={{ fontSize: 16 }} />
                    <span className="ml-3 text-sm font-light">Quick-reply</span>
                    
-                </a>
+                </Link>
              </li>
              <hr/>
              <li>
-                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                <Link href="/setting/team-setting" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-50  dark:hover:bg-green-700 group">
                    <GroupsIcon sx={{ fontSize: 16 }} />
                    <span className="ml-3 text-sm font-light">Team Setting</span>
-                </a>
+                </Link>
              </li>
              <hr/>
              <li>
-                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                <Link href="/setting/developer-setting" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-50  dark:hover:bg-green-700 group">
                    <PersonalVideoOutlinedIcon sx={{ fontSize: 16 }} />
                    <span className="ml-3 text-sm font-light">Developer Setting</span>
-                </a>
+                </Link>
              </li>
              <hr/>
              <li>
-                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-50  dark:hover:bg-green-700 group">
                    <SecurityOutlinedIcon sx={{ fontSize: 16 }} />
                    <span className="ml-3 text-sm font-light">Access Permission</span>
                 </a>
              </li>
              <hr/>
              <li>
-                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-100 dark:hover:bg-green-700 group">
+                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-50  dark:hover:bg-green-700 group">
                    <MarkChatUnreadOutlinedIcon sx={{ fontSize: 16 }} />
                    <span className="ml-3 text-sm font-light">Manage Whatsapp <br/> Profile</span>
                 </a>
