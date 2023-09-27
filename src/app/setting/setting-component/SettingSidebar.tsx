@@ -56,10 +56,10 @@ const SettingSidebar = () => {
              </li>
              <hr/>
              <li>
-                <a href="#" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-50  dark:hover:bg-green-700 group">
+                <Link href="/setting/signup-business" className="flex items-center p-2 text-green-900 rounded-lg dark:text-white hover:bg-green-50  dark:hover:bg-green-700 group">
                    <MarkChatUnreadOutlinedIcon sx={{ fontSize: 16 }} />
                    <span className="ml-3 text-sm font-light">Manage Whatsapp <br/> Profile</span>
-                </a>
+                </Link>
              </li>
              <hr/>
           </ul>
